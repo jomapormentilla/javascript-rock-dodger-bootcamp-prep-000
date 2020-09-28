@@ -146,6 +146,8 @@ function endGame() {
   alert('YOU LOSE!')
 }
 
+window.addEventListener('keydown', moveDodger(e))
+
 function moveDodger(e) {
   // implement me!
   /**
@@ -155,7 +157,6 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   window.addEventListener('keydown', function(e){
       if( e.which === LEFT_ARROW ){
         e.preventDefault()
         e.stopPropagation()
@@ -166,7 +167,6 @@ function moveDodger(e) {
         e.stopPropagation()
         moveDodgerRight()
       }
-   })
 }
 
 function moveDodgerLeft() {
