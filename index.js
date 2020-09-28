@@ -179,7 +179,7 @@ function moveDodgerLeft() {
   var left = positionToInteger(DODGER.style.left)
 
   function step(){
-    DODGER.style.left = `${left - 4}px`
+    DODGER.style.left = `${left -= 4}px`
        
     if(left > 0){
       window.requestAnimationFrame(step)
@@ -200,7 +200,7 @@ function moveDodgerRight() {
      
      
        function step(){
-          DODGER.style.left = `${left + 4}px`
+          DODGER.style.left = `${left += 4}px`
           
           if(left < 360){
             window.requestAnimationFrame(step)
