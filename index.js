@@ -164,7 +164,6 @@ function moveDodger(e) {
         e.stopPropagation()
         moveDodgerLeft()
       } else if( e.which === RIGHT_ARROW ){
-        return
         e.preventDefault()
         e.stopPropagation()
         moveDodgerRight()
