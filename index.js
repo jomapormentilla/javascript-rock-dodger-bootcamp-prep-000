@@ -146,7 +146,9 @@ function endGame() {
   alert('YOU LOSE!')
 }
 
-window.addEventListener('keydown', moveDodger(e))
+window.addEventListener('keydown', function(e){
+  moveDodger(e)
+})
 
 function moveDodger(e) {
   // implement me!
